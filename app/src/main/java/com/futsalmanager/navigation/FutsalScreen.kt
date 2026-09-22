@@ -9,10 +9,10 @@ sealed class FutsalScreen(
     val title: String,
     val icon: ImageVector
 ) {
-    object MatchEngine : FutsalScreen("match_engine", "Jogo", Icons.Default.SportsSoccer)
-    object Tactics : FutsalScreen("tactics", "Táticas", Icons.Default.GridView)
-    object Finance : FutsalScreen("finance", "Finanças", Icons.Default.AttachMoney)
-    object Training : FutsalScreen("training", "Treinos", Icons.Default.FitnessCenter)
+    object MatchEngine : FutsalScreen("match_engine", "Jogo", Icons.Default.PlayArrow)
+    object Tactics : FutsalScreen("tactics", "Táticas", Icons.Default.Menu)
+    object Finance : FutsalScreen("finance", "Finanças", Icons.Default.CheckCircle)
+    object Training : FutsalScreen("training", "Treinos", Icons.Default.AccountCircle)
     object Market : FutsalScreen("market", "Mercado", Icons.Default.ShoppingCart)
 
     companion object {
