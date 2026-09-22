@@ -19,10 +19,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
+    # Força a utilização do Gradle 8.5 (compatível com Android Gradle Plugin 8.2)
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
+      with:
+        gradle-version: '8.5'
 
-    # Utiliza o gradle instalado pelo setup-gradle, sem precisar do script local
     - name: Build Debug APK
       run: gradle assembleDebug
 
